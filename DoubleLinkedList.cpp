@@ -70,7 +70,48 @@ class DoubleLinkedList
 
     void hapus()
     {
-      
+      if (START == NULL)
+    {
+        cout << "\nList is empty" << endl;
+        return;
+    }
+
+    cout << "\nEnter the roll number of the student whose record is to be deleted: ";
+    int rollNo;
+    cin >> rollNo;
+
+    Node *current = START;
+
+  
+    while (current != NULL && current->NoMhs != rollNo)
+        current = current->next;
+
+    if (current == NULL)
+    {
+        cout << "Record not found" << endl;
+        return;
+    }
+
+
+    if (current == START)
+    {
+        START = current->next;
+        if (START != NULL)
+            START->prev = NULL;
+    }
+    else
+    {
+        
+        current->prev->next = current->next;
+
+        // Step 4: kalau bukan node terakhir
+        if (current->next != NULL)
+            current->next->prev = current->prev;
+    }
+
+    delete current;
+
+    cout << "Record with roll number " << rollNo << " deleted" << endl;
     }
 
 
