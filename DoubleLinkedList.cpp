@@ -29,5 +29,9 @@ class DoubleLinkedList
 
         Node *newNode = new Node();
         newNode->NoMhs = nim;
-    }
+
+        if (START == NULL || nim <= START->NoMhs){
+            
+        }
+}
 };
