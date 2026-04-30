@@ -187,7 +187,7 @@ class DoubleLinkedList
             cout << "Roll Number: " << current->NoMhs << endl;
         }
     }
-
+};
     int main() 
     {
 
@@ -239,8 +239,3 @@ class DoubleLinkedList
 
     }while (choice != '6');
     }
-    
-
-
-
-};
