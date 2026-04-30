@@ -48,5 +48,15 @@ class DoubleLinkedList
             return;
 
         }
+
+        Node *current = START;
+        while (current->next != NULL && current->next->NoMhs < nim){
+            current = current->next;
+        }
+        if (current->next != NULL && nim == current->next->NoMhs)
+        {
+            cout << "\nDuplicate roll numbers not allowed" << endl;
+            return;
+        }
     }
 };
