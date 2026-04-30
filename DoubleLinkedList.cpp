@@ -21,4 +21,8 @@ class DoubleLinkedList
         START = NULL;
     }
 
+    void addNode()
+    {
+        
+    }
 };
