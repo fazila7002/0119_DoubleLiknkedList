@@ -91,7 +91,17 @@ class DoubleLinkedList
             return;
         }
 
-        
+        Node *currentNode = START;
+
+        cout << "\nRecord in ascending order of roll number are:\n";
+        int i = 0;
+        while (currentNode != NULL)
+        {
+            cout << i + 1 << ". " << currentNode->NoMhs << " " << endl;
+
+            currentNode = currentNode->next;
+            i++;
+        }
 
     }
 };
