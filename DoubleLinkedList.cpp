@@ -28,5 +28,6 @@ class DoubleLinkedList
         cin >> nim;
 
         Node *newNode = new Node();
+        newNode->NoMhs = nim;
     }
 };
