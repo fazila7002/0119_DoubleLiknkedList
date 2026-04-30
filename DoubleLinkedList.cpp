@@ -9,3 +9,6 @@ class Node
     Node *next;
     Node *prev;
 };
+
+class DoubleLinkedList
+{};
